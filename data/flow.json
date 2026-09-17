@@ -1,0 +1,121 @@
+{
+  "users": {
+    "1511953395232280658": {
+      "flow": 0,
+      "wins": 7,
+      "losses": 5,
+      "username": "zoddisuncool"
+    },
+    "854357147256881152": {
+      "flow": 651,
+      "wins": 11,
+      "losses": 3,
+      "username": "krat28"
+    },
+    "1501843796831506546": {
+      "flow": 592,
+      "wins": 4,
+      "losses": 7,
+      "username": "mizuxvampire"
+    },
+    "1520642224830939218": {
+      "flow": 0,
+      "wins": 0,
+      "losses": 1,
+      "username": "zzzaddyyyy"
+    },
+    "1516877614709608560": {
+      "flow": 0,
+      "wins": 1,
+      "losses": 100,
+      "username": "subhoo0934"
+    },
+    "1545708714273542248": {
+      "flow": 497,
+      "wins": 0,
+      "losses": 1,
+      "username": null
+    },
+    "1492540609112572115": {
+      "flow": 700,
+      "wins": 0,
+      "losses": 0,
+      "username": null
+    },
+    "1426269003965267999": {
+      "flow": 550,
+      "wins": 0,
+      "losses": 0,
+      "username": null
+    },
+    "1495063702808821760": {
+      "flow": 0,
+      "wins": 0,
+      "losses": 0,
+      "username": "warrior732010"
+    },
+    "1547866224627683328": {
+      "flow": 439,
+      "wins": 2,
+      "losses": 5,
+      "username": "mondilo_"
+    },
+    "539026307384606731": {
+      "flow": 5,
+      "wins": 1,
+      "losses": 0,
+      "username": null
+    },
+    "1539511159726669914": {
+      "flow": 657,
+      "wins": 1,
+      "losses": 2,
+      "username": null
+    },
+    "705363199100190733": {
+      "flow": 0,
+      "wins": 0,
+      "losses": 0,
+      "username": null
+    },
+    "792628429790642176": {
+      "flow": 800,
+      "wins": 0,
+      "losses": 0,
+      "username": null
+    },
+    "1517787551182622773": {
+      "flow": 10,
+      "wins": 2,
+      "losses": 0,
+      "username": null
+    },
+    "1115704013887901706": {
+      "flow": 5,
+      "wins": 1,
+      "losses": 0,
+      "username": null
+    },
+    "1354652472412475533": {
+      "flow": 547,
+      "wins": 0,
+      "losses": 1,
+      "username": "rishu_yd"
+    },
+    "1549113599769837723": {
+      "flow": 570,
+      "wins": 0,
+      "losses": 0,
+      "username": null
+    },
+    "1445695446868557905": {
+      "flow": 503,
+      "wins": 1,
+      "losses": 4,
+      "username": "trwinner"
+    }
+  },
+  "settings": {
+    "reportTimeoutMinutes": 10
+  }
+}
