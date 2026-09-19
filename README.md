@@ -16,9 +16,17 @@ automatic FLOW updates, tiers, and a leaderboard.
   *sets* (does not add to) a player's win/loss count.
 - **`/leaderboard`** — ranked list of everyone's FLOW, paginated 10 at a time.
 - **`/flow [@user]`** — check your own FLOW/Tier, or someone else's.
-- **`/cancelduel`** — cancels your current duel at any stage (pending accept,
-  on cooldown, or waiting on results), so nobody gets stuck waiting on a
-  result that isn't coming. Either participant can use it, and so can
+- **`/openchallenge [message]`** — challenge the whole clan instead of one
+  person. Posts an embed with a single Accept button; the *first* person to
+  click it (who isn't already in a duel) becomes the opponent, and from
+  there it plays out exactly like a normal `/duel` — same cooldown, same
+  result buttons, same FLOW math, and `/cancelduel` works on it too. Pass
+  `message` to customize the challenge text; otherwise it uses a default
+  "has openly challenged the entire clan..." line.
+- **`/cancelduel`** — cancels your current duel at any stage (pending
+  accept, on cooldown, or waiting on results), so nobody gets stuck waiting
+  on a result that isn't coming. Works on `/openchallenge` duels too, even
+  before anyone has accepted. Either participant can use it, and so can
   Evaluators.
 - **`/setreporttime minutes`** — evaluator-only. Changes how long players get
   to report a result after the cooldown ends (default **7 minutes**, range

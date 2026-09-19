@@ -16,7 +16,8 @@ module.exports = {
     }
 
     const isParticipant =
-      interaction.user.id === context.challenger.id || interaction.user.id === context.opponent.id;
+      interaction.user.id === context.challenger.id ||
+      (context.opponent && interaction.user.id === context.opponent.id);
     if (!isParticipant && !hasEvaluatorRole(interaction)) {
       return interaction.reply({ content: "You can only cancel a duel you're part of.", ephemeral: true });
     }
@@ -30,7 +31,7 @@ module.exports = {
     }
 
     return interaction.reply({
-      content: `Duel cancelled. ${context.challenger.username} and ${context.opponent.username} are both free to start new duels.`,
+      content: 'Duel cancelled. Everyone involved is free to start new duels.',
       ephemeral: true,
     });
   },

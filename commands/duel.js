@@ -152,8 +152,9 @@ module.exports = {
     });
   },
 
-  // Exposed so /cancelduel can tear down a duel at whatever stage it's in.
+  // Exposed so /cancelduel and /openchallenge can reuse the same machinery.
   cancelDuel,
+  startResultPhase,
 };
 
 function startResultPhase(interaction, context) {
@@ -255,14 +256,14 @@ function startResultPhase(interaction, context) {
         // applying any change.
         const winnerBefore = db.getUser(winner.id);
         const loserBefore = db.getUser(loser.id);
-        const { winnerDelta, loserDelta, wasUnderdog } = computeFlowChange(winnerBefore.flow, loserBefore.flow);
+        const { winnerDelta, loserDelta } = computeFlowChange(winnerBefore.flow, loserBefore.flow);
 
         const winnerRec = db.addFlow(winner.id, winnerDelta, { win: true });
         const loserRec = db.addFlow(loser.id, loserDelta, { loss: true });
 
         color = 0x2ecc71;
         outcomeText =
-          `🏆 **${winner.username} won the duel!**${wasUnderdog ? ' 🐺 Underdog victory!' : ''}\n\n` +
+          `🏆 **${winner.username} won the duel!**\n\n` +
           `${winner} +${winnerDelta} FLOW → **${winnerRec.flow}** (${formatTier(winnerRec.flow)})\n` +
           `${loser} ${loserDelta} FLOW → **${loserRec.flow}** (${formatTier(loserRec.flow)})`;
       }
@@ -296,12 +297,14 @@ async function cancelDuel(context, canceledBy) {
 
   duelManager.unlock(context);
 
+  const description = context.opponent
+    ? `The duel between ${context.challenger} and ${context.opponent} was cancelled by ${canceledBy}. No FLOW changes made.`
+    : `${context.challenger}'s open challenge was cancelled by ${canceledBy}.`;
+
   const cancelEmbed = new EmbedBuilder()
     .setColor(0x95a5a6)
     .setTitle('🌊 Duel Cancelled')
-    .setDescription(
-      `The duel between ${context.challenger} and ${context.opponent} was cancelled by ${canceledBy}. No FLOW changes made.`,
-    );
+    .setDescription(description);
 
   const targetMessage = context.resultMessage || context.challengeMessage;
   if (targetMessage) {
