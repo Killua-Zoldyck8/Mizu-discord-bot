@@ -4,12 +4,12 @@
 // win/loss amounts depending on whether the winner was the higher- or
 // lower-rated player going in. `min` thresholds are checked highest-first.
 const BRACKETS = [
-  { min: 300, higherWin: 1, higherLoss: -7, lowerWin: 8, lowerLoss: -1 },
-  { min: 250, higherWin: 1, higherLoss: -7, lowerWin: 8, lowerLoss: -1 },
-  { min: 200, higherWin: 2, higherLoss: -6, lowerWin: 8, lowerLoss: -1 },
-  { min: 150, higherWin: 2, higherLoss: -6, lowerWin: 8, lowerLoss: -1 },
-  { min: 100, higherWin: 3, higherLoss: -5, lowerWin: 7, lowerLoss: -1 },
-  { min: 50, higherWin: 4, higherLoss: -4, lowerWin: 6, lowerLoss: -2 },
+  { min: 300, higherWin: 1, higherLoss: -1, lowerWin: 8, lowerLoss: -7 },
+  { min: 250, higherWin: 1, higherLoss: -1, lowerWin: 8, lowerLoss: -7 },
+  { min: 200, higherWin: 2, higherLoss: -1, lowerWin: 8, lowerLoss: -6 },
+  { min: 150, higherWin: 2, higherLoss: -1, lowerWin: 8, lowerLoss: -6 },
+  { min: 100, higherWin: 3, higherLoss: -1, lowerWin: 7, lowerLoss: -5 },
+  { min: 50, higherWin: 4, higherLoss: -2, lowerWin: 6, lowerLoss: -4 },
   { min: 0, higherWin: 5, higherLoss: -3, lowerWin: 5, lowerLoss: -3 },
 ];
 
