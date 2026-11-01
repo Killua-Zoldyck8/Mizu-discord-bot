@@ -1,19 +1,13 @@
 {
   "users": {
-    "1511953395232280658": {
-      "flow": 0,
-      "wins": 7,
-      "losses": 5,
-      "username": "zoddisuncool"
-    },
     "854357147256881152": {
       "flow": 651,
       "wins": 11,
       "losses": 3,
-      "username": "krat28"
+      "username": "kratdc"
     },
     "1501843796831506546": {
-      "flow": 592,
+      "flow": 602,
       "wins": 4,
       "losses": 7,
       "username": "mizuxvampire"
@@ -113,6 +107,84 @@
       "wins": 1,
       "losses": 4,
       "username": "trwinner"
+    },
+    "1246500631670296598": {
+      "flow": 550,
+      "wins": 0,
+      "losses": 0,
+      "username": null
+    },
+    "751701794521874432": {
+      "flow": 0,
+      "wins": 0,
+      "losses": 0,
+      "username": "devkillr3785"
+    },
+    "1492540609112572115": {
+      "flow": 800,
+      "wins": 0,
+      "losses": 0,
+      "username": "adolf0yess"
+    },
+    "792628429790642176": {
+      "flow": 800,
+      "wins": 0,
+      "losses": 0,
+      "username": "opgamer9305"
+    },
+    "1526882911532351558": {
+      "flow": 752,
+      "wins": 0,
+      "losses": 0,
+      "username": "wellson0000"
+    },
+    "1550288737269842056": {
+      "flow": 750,
+      "wins": 0,
+      "losses": 0,
+      "username": "nonchalantekta"
+    },
+    "1539511159726669914": {
+      "flow": 663,
+      "wins": 0,
+      "losses": 0,
+      "username": "alphamoarch3"
+    },
+    "1006410931502317740": {
+      "flow": 650,
+      "wins": 0,
+      "losses": 0,
+      "username": "knee_grown"
+    },
+    "1507665652125532182": {
+      "flow": 608,
+      "wins": 0,
+      "losses": 0,
+      "username": "kachixchiku"
+    },
+    "1372577441561706566": {
+      "flow": 603,
+      "wins": 0,
+      "losses": 0,
+      "username": "krish9a_96"
+    },
+    "1543178809631576064": {
+      "flow": 400,
+      "wins": 0,
+      "losses": 0,
+      "username": "TFgamero"
+    },
+    "751701794521874432": {
+      "flow": 499,
+      "wins": 0,
+      "losses": 0,
+      "username": "Justintwinn"
+    },
+    "1246500631670296598": {
+      "flow": 550,
+      "wins": 0,
+      "losses": 0,
+      "username": "Shinji"
     }
   },
   "settings": {
